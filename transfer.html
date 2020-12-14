@@ -1,0 +1,86 @@
+<html>
+<head style="border-style: solid;">
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script type="text/javascript" src="/static/bankingsystem.js"></script>
+<body>	
+    <div style="width:32%;display: inline-block;background:rgb(0, 102, 255);background: linear-gradient(90deg, rgb(0, 102, 255) 45%, WHITE 80%)">
+        <h1 style="text-align: center;color:black; font-family:'Times New Roman', Times, serif;font-weight: 1000;font-size: 50px;">SPARKS BANK</h1>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+</body>
+<body>
+
+<h1 style="text-align: center; color: red;text-decoration-color:black;text-align: center;font-family: times new roman;">Please select following details</h1>
+<center>
+<table cellspacing="4">
+<tr>
+<th>Name of holder(FROM):<select id="dropdowndemo">
+<option value="name">name </option>
+<option value="Apurva">Apurva </option>
+<option value="xyz">xyz </option>
+<option value="dk">dk </option>
+<option value="joshua">joshua </option>
+<option value="jun">jun</option>
+<option value="hoshi">hoshi</option>
+<option value="woozi">woozi</option>
+<option value="hani">hani</option>
+<option value="vernon">vernon </option>
+<option value="dino">dino</option>
+</select><br><br>
+</th>
+<th><p id="first_money"></p></th>
+</tr>
+<tr>
+<th>Name of holder(TO):<select id="receiver_dropdown">
+<option value="name">name </option>
+<option value="Apurva">Apurva </option>
+<option value="xyz">xyz </option>
+<option value="dk">dk </option>
+<option value="joshua">joshua </option>
+<option value="jun">jun</option>
+<option value="hoshi">hoshi</option>
+<option value="woozi">woozi</option>
+<option value="hani">hani</option>
+<option value="vernon">vernon </option>
+<option value="dino">dino</option>
+</select><br><br>
+</th>
+<th><p id="receiver_money"></p></th>
+</tr>
+
+<tr>
+<th>Amount :<input type="number" id="Amount" value="" placeholder= "amount"size="10"><br><br></th>
+</tr>
+<tr>
+<th>
+    
+    <h2></h2>
+    
+    
+    <button onclick="myFunction()">Transfer amount</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+      var txt;
+      if (confirm("Press ok to confirm!")) {
+        txt = "the amount has been transfered!";
+      } else {
+        txt = "the transaction has been cancelled!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+    
+</th>
+</tr>
+</center>
+</table>
+</body>
+</html>
